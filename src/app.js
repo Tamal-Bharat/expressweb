@@ -23,7 +23,7 @@ app.get('/weather', (request, response)=>{
 });
 
 app.get('*', (request, response)=>{
-    response.send('htmls/404_error');
+    response.render('htmls/404_error');
 });
 
 app.get('/weather', (request, response)=>{
