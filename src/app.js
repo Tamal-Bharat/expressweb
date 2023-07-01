@@ -21,8 +21,9 @@ app.get('/about', (request, response)=>{
 app.get('/weather', (request, response)=>{
     response.render('htmls/weather');
 });
+
 app.get('*', (request, response)=>{
-    response.send(`404 error page`);
+    response.send('htmls/404_error');
 });
 
 app.get('/weather', (request, response)=>{
